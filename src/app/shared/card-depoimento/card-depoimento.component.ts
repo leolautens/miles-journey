@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CardDepoimentoComponent {
   depoimento: string = `
-    Recomendo fortemente a agência de viagens Jornada.
-    Eles oferecem um serviço personalizado e de alta qualidade
-    que excedeu minhas expectativas em minha última viagem.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   `
-  autoria: string = 'Mariana Faustino'
+  autoria: string = 'Fantasy'
 }

@@ -58,7 +58,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatDatepickerModule,
     MatNativeDateModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    CardSearchComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

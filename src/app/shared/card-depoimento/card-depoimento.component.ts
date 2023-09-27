@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Depoimento } from 'src/app/core/types/type';
 
 @Component({
   selector: 'app-card-depoimento',
@@ -6,10 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-depoimento.component.scss']
 })
 export class CardDepoimentoComponent {
-  depoimento: string = `
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  `
-  autoria: string = 'Fantasy'
+  @Input() depoimento!: Depoimento;
+
 }

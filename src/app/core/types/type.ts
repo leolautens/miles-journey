@@ -6,7 +6,14 @@ export interface Promocao {
 }
 
 export interface UnidadeFederativa {
-    id: number
-    nome: string
-    sigla: string
+    id: number;
+    nome: string;
+    sigla: string;
+}
+
+export interface Depoimento {
+    id: number;
+    texto: string;
+    autor: string;
+    avatar: string;
 }

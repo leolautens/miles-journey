@@ -8,7 +8,7 @@ import { Promocao } from 'src/app/core/types/type';
   styleUrls: ['./promocoes.component.scss']
 })
 export class PromocoesComponent implements OnInit {
-  promocoes!: Promocao[];
+  promocoes: Promocao[] = [];
   constructor(private service: PromocaoService) {
   }
   ngOnInit(): void {

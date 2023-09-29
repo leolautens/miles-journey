@@ -19,7 +19,7 @@ export class FormBuscaService {
       destino: new FormControl(null),
       tipo: new FormControl("Econômica"),
       adultos: new FormControl(1),
-      crianças: new FormControl(0),
+      criancas: new FormControl(0),
       bebes: new FormControl(0)
     });
   }
@@ -59,6 +59,16 @@ export class FormBuscaService {
         tipo,
       })
     }
+  }
+
+  trocarOrigemDestino(): void {
+    const origem = this.formBusca.get('origem')?.value;
+    const destino = this.formBusca.get('destino')?.value;
+
+    this.formBusca.patchValue({
+      origem: destino,
+      destino: origem
+    });
   }
 
   openDialog() {

@@ -34,6 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
 import { DepoimentosComponent } from './pages/home/depoimentos/depoimentos.component';
 import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
+import { LoginComponent } from './pages/login/login.component';
  
 
 @NgModule({
@@ -53,7 +54,8 @@ import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-
     PromocoesComponent,
     DropdownUfComponent,
     DepoimentosComponent,
-    SeletorPassageiroComponent
+    SeletorPassageiroComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -12,11 +12,11 @@ export class FormBaseComponent implements OnInit{
   cadastroForm!: FormGroup;
   estadoControl = new FormControl<UnidadeFederativa | null>(null, Validators.required);
   @Input() perfilComponent!: boolean;
-  @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>
+  @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>()
 
   constructor(
     private formBuilder: FormBuilder,
-    private FormularioService: FormularioService
+    private formularioService: FormularioService
   ) { }
 
   ngOnInit() {
@@ -34,8 +34,7 @@ export class FormBaseComponent implements OnInit{
       confirmarSenha: [null, [Validators.required, Validators.minLength(3)]],
       aceitarTermos: [null, [Validators.requiredTrue]]
     });
-
-    this.FormularioService.setCadastro(this.cadastroForm)
+    this.formularioService.setCadastro(this.cadastroForm)
   }
 
   executarAcao() {

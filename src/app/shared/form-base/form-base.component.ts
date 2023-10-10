@@ -13,7 +13,10 @@ import { UnidadeFederativa } from 'src/app/core/types/type';
 export class FormBaseComponent implements OnInit{
   cadastroForm!: FormGroup;
   estadoControl = new FormControl<UnidadeFederativa | null>(null, Validators.required);
-  @Input() perfilComponent!: boolean;
+
+  @Input() titulo: string = 'Crie sua conta';
+  @Input() textoBotao: string = 'CRIAR MINHA CONTA';
+  @Input() perfilComponent = false;
   @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>()
 
   constructor(

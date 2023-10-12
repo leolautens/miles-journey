@@ -18,6 +18,7 @@ export class FormBaseComponent implements OnInit{
   @Input() textoBotao: string = 'CRIAR MINHA CONTA';
   @Input() perfilComponent = false;
   @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>()
+  @Output() sair: EventEmitter<any> = new EventEmitter<any>()
 
   constructor(
     private formBuilder: FormBuilder,
@@ -53,5 +54,9 @@ export class FormBaseComponent implements OnInit{
 
   executarAcao() {
     this.acaoClique.emit();
+  }
+
+  deslogar() {
+    this.sair.emit();
   }
 }

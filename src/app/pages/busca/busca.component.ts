@@ -25,18 +25,16 @@ export class BuscaComponent implements OnInit{
       tipo: 'Executiva'
     }
 
-    const filtro = this.formBuscaService.IsValid ?
-        this.formBuscaService.obterFiltros()
-        : filtroPadrao;
+    const filtro = this.formBuscaService.IsValid ? this.formBuscaService.obterFiltros(): filtroPadrao;
     this.passagemService.getPassagens(filtro)
       .subscribe(res => {
         this.passagens = res.resultado;
-        console.log(this.passagens);
+        console.log('Passagens =>', this.passagens);
       })
   }
 
   obterPassagens(filtro: DadosBusca){
-    console.log('filtro => ', filtro)
+    console.log('Filtro => ', filtro)
     this.passagemService.getPassagens(filtro).subscribe(
       res => {
         this.passagens = res.resultado

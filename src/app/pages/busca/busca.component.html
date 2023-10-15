@@ -3,6 +3,9 @@
     <app-container>
         <app-form-busca (realizarBusca)="obterPassagens($event)"></app-form-busca>
         <section class="conteudo">
+          <aside class="filtros-adicionais">
+            <app-filtros-complementares (search)="obterPassagens($event)"></app-filtros-complementares>
+          </aside>
           <div class="passagens">
             <app-passagem *ngFor="let passagem of passagens" [passagem]="passagem"></app-passagem>
           </div>

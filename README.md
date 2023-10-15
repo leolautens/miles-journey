@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## 🛠️ Open and run the project
 
-To open and run the project, run `npm i` to install the dependencies and `ng serve` to start the project.
+Run `npm i` to install the dependencies and `ng serve` to start the project.
 
 Then go to <a href="http://localhost:4200/">http://localhost:4200/</a> in your browser.
 

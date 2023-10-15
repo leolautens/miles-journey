@@ -7,17 +7,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./form-busca.component.scss']
 })
 export class FormBuscaComponent {
-  @Output() realizarBusca = new EventEmitter()
-
+  @Output() realizarBusca = new EventEmitter();
   constructor(
-    public formBuscaService: FormBuscaService) { }
-    
-  buscar () {
-    if(this.formBuscaService.IsValid) {
-      const formBuscavalue = this.formBuscaService.formBusca.value;
-      this.realizarBusca.emit(formBuscavalue)
+    public formBuscaService: FormBuscaService) {}
+
+  buscar() {
+    if (this.formBuscaService.IsValid) {
+      this.realizarBusca.emit(this.formBuscaService.obterFiltros());
     } else {
-      alert('O formulário precisa ser preenchido')
+      console.log('Formulário inválido');
     }
   }
 }

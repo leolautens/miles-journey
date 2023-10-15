@@ -34,6 +34,4 @@ export class BuscaComponent implements OnInit {
       }
     )
   }
-
-  
 }

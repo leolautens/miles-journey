@@ -42,6 +42,8 @@ import { FormBaseComponent } from './shared/form-base/form-base.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { AutenticacaoInterceptor } from './core/interceptors/autenticacao.interceptor';
+import { BuscaComponent } from './pages/busca/busca.component';
+import { PassagemComponent } from './shared/passagem/passagem.component';
  
 
 @NgModule({
@@ -65,7 +67,9 @@ import { AutenticacaoInterceptor } from './core/interceptors/autenticacao.interc
     LoginComponent,
     FormBaseComponent,
     CadastroComponent,
-    PerfilComponent
+    PerfilComponent,
+    BuscaComponent,
+    PassagemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 # Miles Journey
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+![Badge Angular Version](https://img.shields.io/badge/angular-v16.2.1-blueviolet)
+
 
 ## ✔️ Techniques and technologies used
 

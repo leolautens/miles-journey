@@ -40,7 +40,7 @@ export class ParadasComponent implements OnInit{
   ngOnInit() {
     this.conexoesControl.valueChanges.subscribe(
       (value) => {
-        if(!value){
+        if(value === null){
           this.opcoesSelecionadas = null
         }
       }

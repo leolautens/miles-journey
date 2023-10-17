@@ -66,7 +66,7 @@ export interface Orcamento {
     total: number;
 }
 
-export interface DadosBusca{
+export interface DadosBusca {
     somenteIda?: boolean;
     passageirosAdultos?: number;
     passageirosCriancas?: number;
@@ -83,4 +83,10 @@ export interface DadosBusca{
     companhiasId?: number[];
     pagina: number;
     porPagina: number;
+}
+
+export interface Destaques {
+    maisRapida: Passagem;
+    maisBarata: Passagem;
+    sugerida: Passagem;
 }

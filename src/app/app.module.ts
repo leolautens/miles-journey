@@ -50,6 +50,7 @@ import { LabelComponent } from './shared/form-busca/filtros-complementares/label
 import { ParadasComponent } from './shared/form-busca/filtros-complementares/paradas/paradas.component';
 import { PrecosComponent } from './shared/form-busca/filtros-complementares/precos/precos.component';
 import { CompanhiasComponent } from './shared/form-busca/filtros-complementares/companhias/companhias.component';
+import { PassagemDestaqueComponent } from './shared/passagem-destaque/passagem-destaque.component';
  
 
 @NgModule({
@@ -80,7 +81,8 @@ import { CompanhiasComponent } from './shared/form-busca/filtros-complementares/
     LabelComponent,
     ParadasComponent,
     PrecosComponent,
-    CompanhiasComponent
+    CompanhiasComponent,
+    PassagemDestaqueComponent
   ],
   imports: [
     BrowserModule,
